@@ -41,14 +41,164 @@
             text-align: center;
             text-shadow: 0px 0px 0px black;
         }
-    
+        .container2-1{
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            flex-direction: column;
+        }
+        .container2-2{
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            flex-direction: column;
+        }
+        .container2-3{
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            flex-direction: column;
+        }
+        .container3,.container4,.container5,.container6,.container7,.container8{
+            width: 270px;
+            height: 130px;
+            /*background-color: green;*/
+            border-radius: 4px;
+            box-shadow: 0px 0px 2px 2px rgb(237, 231, 231);
+            margin-bottom: 20px;
+            opacity: 0; /* Start with opacity 0 */
+            animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 8; /* End with opacity 1 */
+            }
+        }
         
+        .course{
+            text-align: center;
+            margin-top: 20%; 
+            font-family: "Teko", sans-serif;
+        }
+        .container3:hover,
+        .container4:hover,
+        .container5:hover,
+        .container6:hover,
+        .container7:hover,
+        .container8:hover {
+            background-color: rgb(231, 222, 222);
+        }
+        
+        /*RESPONSIVENESS*/
         @media screen and (min-width: 601px) and (max-width: 1800px) {
             .navbar-brand{
                 font-family: "Teko", sans-serif;
                 font-size: 30px;
                 padding-left: 0px;
             }   
+        }
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+        .container2-1{
+            display: flex;
+            justify-content: space-around;   
+            align-items: center;
+            flex-direction: row;
+        }
+        .container2-2{
+            display: flex;
+            justify-content: space-around;    
+            align-items: center;
+            flex-direction: row;
+        }
+        .container2-3{
+            display: flex;
+            justify-content: space-around;    
+            align-items: center;
+            flex-direction: row;
+        }
+        .container3,.container4,.container5,.container6,.container7,.container8{
+            width: 400px;
+            height: 220px;
+            /*background-color: green;*/
+            border-radius: 4px;
+            box-shadow: 0px 0px 2px 2px rgb(237, 231, 231);
+            margin-bottom: 20px;
+            opacity: 0; /* Start with opacity 0 */
+            animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 8; /* End with opacity 1 */
+            }
+        }
+        
+        .container3:hover,
+        .container4:hover,
+        .container5:hover,
+        .container6:hover,
+        .container7:hover,
+        .container8:hover {
+            background-color: rgb(231, 222, 222);
+        }
+
+         
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1800px) {
+        .container2-1{
+            display: flex;
+            justify-content: space-around;   
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        .container2-2{
+            display: flex;
+            justify-content: space-around;    
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        .container2-3{
+            display: flex;
+            justify-content: space-around;    
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        .container3,.container4,.container5,.container6,.container7,.container8{
+            width: 400px;
+            height: 220px;
+            /*background-color: green;*/
+            border-radius: 4px;
+            box-shadow: 0px 0px 2px 2px rgb(237, 231, 231);
+            margin-bottom: 20px;
+            opacity: 0; /* Start with opacity 0 */
+            animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 8; /* End with opacity 1 */
+            }
+        }
+        .container3:hover,
+        .container4:hover,
+        .container5:hover,
+        .container6:hover,
+        .container7:hover,
+        .container8:hover {
+            background-color: rgb(231, 222, 222);
+        }
         }
 
     </style>
@@ -79,6 +229,30 @@
 </div>
 <div class="container1">
     <h3 class="text-primary head1">Welcome To TDR's Webpage</h3>
+</div>
+<div class="container2-1">
+    <div class="container3">
+        <h1 class="course">NMMS</h1>  
+    </div>
+    <div class="container4">
+        <h1 class="course">SAINIK SCHOOL</h1>  
+    </div>
+</div>
+<div class="container2-2">
+    <div class="container5">
+        <h1 class="course">RMS</h1>  
+    </div>
+    <div class="container6">
+        <h1 class="course">RIMC</h1>  
+    </div>
+</div>
+<div class="container2-3">
+    <div class="container7">
+        <h1 class="course">NAVODAYA</h1>  
+    </div>
+    <div class="container8">
+        <h1 class="course">EAPCET</h1>  
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
