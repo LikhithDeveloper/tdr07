@@ -41,6 +41,7 @@
             text-align: center;
             text-shadow: 0px 0px 0px black;
         }
+    
         .container2-1{
             display: flex;
             justify-content: center;    
@@ -67,21 +68,37 @@
             box-shadow: 0px 0px 2px 2px rgb(237, 231, 231);
             margin-bottom: 20px;
             opacity: 0; /* Start with opacity 0 */
-            animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+            animation: fadeIn 2s ease forwards; /* Apply fadeIn animation */
         }
+        .mattercon{
+            text-align: center;
+            font-family: "Teko", sans-serif;
+            font-size: 20px;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0; /* Start with opacity 0 */
             }
             to {
-                opacity: 12; /* End with opacity 1 */
+                opacity: 1; /* End with opacity 1 */
             }
+        }
+        
+        .me{
+            width: 13%;
+            height: 13%;
         }
         
         .course{
             text-align: center;
             margin-top: 20%; 
             font-family: "Teko", sans-serif;
+        }
+        .welcomepage{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(104, 104, 226);
         }
         .container3:hover,
         .container4:hover,
@@ -90,6 +107,64 @@
         .container7:hover,
         .container8:hover {
             background-color: rgb(231, 222, 222);
+        }
+        .welcomepage {
+        height: 500px;
+        position: relative; /* Ensure absolute positioning is relative to this div */
+        background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+        }
+        @keyframes slide{
+            25%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
+                background-size: cover;
+            background-position: center;
+            }
+            65%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
+                background-size: cover;
+            background-position: center;
+            }
+            100%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+                background-size: cover;
+            background-position: center;
+            }
+        }
+        .innerwelp {
+            width: 250px;
+            height: 500px; /* Adjust height as needed */
+            position: absolute;
+            left: 30px; /* Adjust left position as needed */
+            top: 40%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Center vertically */
+            text-align: center;
+            padding-left: 12px;
+        }
+        .weltext{
+            padding-top: 180px;
+            font-family: "Teko", sans-serif;
+            color: yellow;
+            animation: fadeIn2 2s ease forwards;
+            text-align: center;
+        }
+        .weltext1{
+            font-size: 40px;
+            font-family: "Teko", sans-serif;
+            color: white;
+            animation: fadeIn2 2s ease forwards;
+            text-align: center;
+
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 1; /* End with opacity 1 */
+            }
         }
         
         /*RESPONSIVENESS*/
@@ -103,19 +178,19 @@
         @media screen and (min-width: 601px) and (max-width: 1024px) {
         .container2-1{
             display: flex;
-            justify-content: space-around;   
+            justify-content: space-evenly;   
             align-items: center;
             flex-direction: row;
         }
         .container2-2{
             display: flex;
-            justify-content: space-around;    
+            justify-content: space-evenly;    
             align-items: center;
             flex-direction: row;
         }
         .container2-3{
             display: flex;
-            justify-content: space-around;    
+            justify-content: space-evenly;    
             align-items: center;
             flex-direction: row;
         }
@@ -127,14 +202,19 @@
             box-shadow: 0px 0px 2px 2px rgb(237, 231, 231);
             margin-bottom: 20px;
             opacity: 0; /* Start with opacity 0 */
-            animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+            animation: fadeIn 2s ease forwards; /* Apply fadeIn animation */
+        }
+        .mattercon{
+            text-align: center;
+            font-family: "Teko", sans-serif;
+
         }
         @keyframes fadeIn {
             from {
                 opacity: 0; /* Start with opacity 0 */
             }
             to {
-                opacity: 12; /* End with opacity 1 */
+                opacity: 2; /* End with opacity 1 */
             }
         }
         
@@ -145,6 +225,64 @@
         .container7:hover,
         .container8:hover {
             background-color: rgb(231, 222, 222);
+        }
+        .welcomepage {
+        height: 500px;
+        position: relative; /* Ensure absolute positioning is relative to this div */
+        background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+        }
+        @keyframes slide{
+            25%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
+                background-size: cover;
+            background-position: center;
+            }
+            65%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
+                background-size: cover;
+            background-position: center;
+            }
+            100%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+                background-size: cover;
+            background-position: center;
+            }
+        }
+        .innerwelp {
+            width: 500px;
+            height: 500px; /* Adjust height as needed */
+            
+            position: absolute;
+            left: 100px; /* Adjust left position as needed */
+            top: 50%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Center vertically */
+            text-align: center;
+            padding-left: 120px;
+        }
+        .weltext{
+            padding-top: 130px;
+            font-family: "Teko", sans-serif;
+            color: yellow;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        .weltext1{
+            font-size: 60px;
+            font-family: "Teko", sans-serif;
+            color: white;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 12; /* End with opacity 1 */
+            }
         }
 
          
@@ -153,21 +291,21 @@
         @media screen and (min-width: 1024px) and (max-width: 1800px) {
         .container2-1{
             display: flex;
-            justify-content: space-around;   
+            justify-content: space-evenly;   
             align-items: center;
             flex-direction: row;
             margin-bottom: 50px;
         }
         .container2-2{
             display: flex;
-            justify-content: space-around;    
+            justify-content: space-evenly;    
             align-items: center;
             flex-direction: row;
             margin-bottom: 50px;
         }
         .container2-3{
             display: flex;
-            justify-content: space-around;    
+            justify-content: space-evenly;    
             align-items: center;
             flex-direction: row;
             margin-bottom: 50px;
@@ -180,7 +318,7 @@
             box-shadow: 0px 0px 2px 2px rgb(237, 231, 231);
             margin-bottom: 20px;
             opacity: 0; /* Start with opacity 0 */
-            animation: fadeIn 1s ease forwards; /* Apply fadeIn animation */
+            animation: fadeIn 2s ease forwards; /* Apply fadeIn animation */
         }
         
         @keyframes fadeIn {
@@ -198,6 +336,64 @@
         .container7:hover,
         .container8:hover {
             background-color: rgb(231, 222, 222);
+        }
+        .welcomepage {
+        height: 600px;
+        position: relative; /* Ensure absolute positioning is relative to this div */
+        background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+        }
+        @keyframes slide{
+            25%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
+                background-size: cover;
+            background-position: center;
+            }
+            65%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
+                background-size: cover;
+            background-position: center;
+            }
+            100%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+                background-size: cover;
+            background-position: center;
+            }
+        }
+        .innerwelp {
+            width: 500px;
+            height: 500px; /* Adjust height as needed */
+            
+            position: absolute;
+            left: 180px; /* Adjust left position as needed */
+            top: 50%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Center vertically */
+            text-align: center;
+            padding-left: 120px;
+        }
+        .weltext{
+            padding-top: 130px;
+            font-family: "Teko", sans-serif;
+            color: yellow;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        .weltext1{
+            font-size: 60px;
+            font-family: "Teko", sans-serif;
+            color: white;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 12; /* End with opacity 1 */
+            }
         }
         }
 
@@ -222,14 +418,19 @@
     </div>
 </nav>
 
-<br>
-
 <div class="scroll">
     <marquee  direction="">Welcome To Dharama Raju's <b>TDR COACHING CENTER</b> Academy of Competative Foundation , B.S colony ,Sompeta, Srikakulam, AndhraPradesh</marquee>
 </div>
-<div class="container1">
-    <h3 class="text-primary head1">Welcome To TDR's Webpage</h3>
+<div class="welcomepage">
+    <div class="innerwelp">
+        <h3 class="weltext">Welcome to TDR</h3>
+        <br>
+        <h1 class="weltext1">Top Coaching Center in Sompeta</h1>
+    </div>
 </div>
+
+<br>
+
 <div class="container2-1">
     <div class="container3">
         <h1 class="course">NMMS</h1>  
