@@ -105,17 +105,23 @@
             width: 250px;
             height: 500px; /* Adjust height as needed */
             position: absolute;
-            left: 44px; /* Adjust left position as needed */
-            top: 40%; /* Position vertically in the middle */
-            transform: translateY(-50%); /* Center vertically */
-            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
         .weltext{
-            padding-top: 180px;
+            text-align: center;
             font-family: "Teko", sans-serif;
             color: yellow;
             animation: fadeIn2 2s ease forwards;
-            text-align: center;
+            text-align: row;
+            
         }
         .weltext1{
             font-size: 40px;
@@ -243,11 +249,12 @@
             display: flex;
             justify-content: center;
             position: relative;
-            top: 50px;
+            top: 70px;
             box-shadow: 0px 0px 100px -25px ;
         }
         .a{
             width: 50%;
+            height: 190px;
             background-color: white;
             text-align: center;
             border-radius: 7px;
@@ -332,11 +339,12 @@
             display: flex;
             justify-content: center;
             position: relative;
-            top: 140px;
+            top: 110px;
             box-shadow: 0px 0px 100px -25px ;
         }
         .a{
-            width: 50%;
+            width: 43.3vh;
+            height: 190px;
             background-color: white;
             text-align: center;
             border-radius: 7px;
